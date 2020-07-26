@@ -18,6 +18,7 @@ matplotlib,
 scikit-image
 
 ## Performance
+Performance of k shot semantic segmentation on Pascal-5<sup>i</sup>
 <table>
     <tr>
         <td>Setting</td>
@@ -82,5 +83,53 @@ scikit-image
         <td>53.77</td>
         <td>51.76</td>
         <td>57.29</td>
+    </tr>
+</table>
+
+
+Performance of k shot semantic segmentation on MS COCO
+<table>
+    <tr>
+        <td>Setting</td>
+        <td>Method</td>
+        <td>COCO-20<sup>0</sup></td>
+        <td>COCO-20<sup>1</sup></td>
+        <td>COCO-20<sup>2</sup></td>
+        <td>COCO-20<sup>3</sup></td>
+        <td>Mean</td>
+    </tr>
+    <tr>
+        <td rowspan="2">1-shot</td>
+        <td>PMMs</td>
+        <td>29.28</td>
+        <td>34.81</td>
+        <td>27.08</td>
+        <td>27.27</td>
+        <td>29.61</td>
+    </tr>
+    <tr>
+        <td>PST</td>
+        <td>30.37</td>
+        <td>37.51</td>
+        <td>30.22</td>
+        <td>32.56</td>
+        <td>32.67</td>
+    </tr>
+    <tr>
+        <td rowspan="2">5-shot</td>
+        <td>PMMs</td>
+        <td>33.00</td>
+        <td>40.55</td>
+        <td>30.29</td>
+        <td>33.27</td>
+        <td>34.28</td>
+    </tr>
+    <tr>
+        <td>PST</td>
+        <td>34.06</td>
+        <td>42.20</td>
+        <td>34.74</td>
+        <td>38.95</td>
+        <td>37.49</td>
     </tr>
 </table>
