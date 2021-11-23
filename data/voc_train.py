@@ -115,9 +115,9 @@ class voc_train():
     def load_frame(self, support_name, query_name, class_):
         support_img = self.read_img(support_name)
         query_img = self.read_img(query_name)
-
-        support_mask = self.read_binary_mask(support_name, class_)
-        query_mask = self.read_binary_mask(query_name, class_)
+        
+        support_mask = self.read_mask(support_name, class_)
+        query_mask = self.read_mask(query_name, class_)
 
         return query_img, query_mask, support_img, support_mask, class_
 
